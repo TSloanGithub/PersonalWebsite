@@ -2,7 +2,9 @@ html{
     background-color: rgb(24, 69, 59);
 
 }
-
+body{
+    margin: 0%;
+}
 header {
     background-color: #333333;
     padding: 10px;
@@ -12,13 +14,14 @@ header {
     border: cyan solid;
 }
 main{
-    background-color: limegreen;
+    background-color: rgb(0, 130, 8);
     margin-left: 20%;
     margin-right: 20%;
     min-height: 100vh;
+    padding: 0px;
 }
-section{
-    background-color: blue;
+.About {
+    border-bottom: 5px solid black;
 }
 .Project {
     background-color: white;
