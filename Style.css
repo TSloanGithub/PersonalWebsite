@@ -1,13 +1,16 @@
 html{
     background-color: rgb(24, 69, 59);
     font-size: 16px;
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    display: grid;
 }
 * {
     box-sizing: border-box;
 }
 body{
     margin: 0 auto;
+    padding: 50px;
+
 }
 
 nav {
@@ -33,6 +36,14 @@ a{
     text-decoration: none;
 
 }
+/*Adding the active white underline to the hovered anchor*/
+a:hover{
+    border-bottom: 1px solid white;
+}
+/*Making the active page underlined white*/
+.active{
+    border-bottom: 1px solid white;
+}
 .index{
     height: 80vh;
     /* border: 5px solid red; */
@@ -41,10 +52,10 @@ a{
 }
 
 .main{
-    background-color: rgb(248, 252, 248);
+    background-color: whitesmoke;
     margin-left: 20%;
     margin-right: 20%;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 10px;
     align-items: center;
 }
@@ -65,15 +76,28 @@ a{
     color: white;
     display: grid;
 }
-.active{
-    border-bottom: 1px solid white;
+
+.contact{
+    height: 50px;
+    background-color: rgb(5, 5, 5);
+    color: white;
 }
 
 footer{
     background-color: #333333;
-    height: 40px;
+    height: 6%;
     left: 0px;
     right: 0px;
     bottom: 0px;
     position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 30px 5px 30px 5px;
+    justify-content: center;
+
+}
+footer img {
+    width: 40px;
+    display: block;
+    border-radius: 5%;
 }
