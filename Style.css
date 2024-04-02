@@ -1,35 +1,103 @@
 html{
     background-color: rgb(24, 69, 59);
-
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+    display: grid;
+}
+* {
+    box-sizing: border-box;
 }
 body{
-    margin: 0%;
+    margin: 0 auto;
+    padding: 50px;
+
 }
-header {
+
+nav {
     background-color: #333333;
+    border: 2px solid blue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /*Alligning the nav anchors to my h1 */
+    align-items: center;
+    display: flex;
+    /*use justify content to space my 2 pieces of my header apart */
+    justify-content: space-between;
+    height: 50px;
     padding: 10px;
-    height: 5vh;
 }
-.Center {
-    border: cyan solid;
+a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+
 }
-main{
-    background-color: rgb(0, 130, 8);
+/*Adding the active white underline to the hovered anchor*/
+a:hover{
+    border-bottom: 1px solid white;
+}
+/*Making the active page underlined white*/
+.active{
+    border-bottom: 1px solid white;
+}
+.index{
+    height: 80vh;
+    /* border: 5px solid red; */
+    padding: 85px 24px;
+    /* justify-content: space-between; */
+}
+
+.main{
+    background-color: whitesmoke;
     margin-left: 20%;
     margin-right: 20%;
-    min-height: 100vh;
-    padding: 0px;
+    min-height: 80vh;
+    padding: 10px;
+    align-items: center;
 }
 .About {
     border-bottom: 5px solid black;
+    display: grid;
 }
 .Project {
-    background-color: white;
+    background-color: #333333;
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 2.5%;
+    margin-top: 50px;
     padding: 5px 5px 5px 5px;
     border: 2px solid;
     border-color: black;
     border-radius: 5px;
+    color: white;
+    display: grid;
+}
+
+.contact{
+    height: 50px;
+    background-color: rgb(5, 5, 5);
+    color: white;
+}
+
+footer{
+    background-color: #333333;
+    height: 6%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 30px 5px 30px 5px;
+    justify-content: center;
+
+}
+footer img {
+    width: 40px;
+    display: block;
+    border-radius: 5%;
 }
